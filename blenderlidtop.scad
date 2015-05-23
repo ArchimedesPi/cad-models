@@ -26,10 +26,7 @@ module rim(id, od, thickness) {
         cylinder(h=thickness, d=od);
         translate([0, 0, -e])
             cylinder(h=thickness + 2*e, d=id);
-        translate([baseDiameter/2, 0, 0])
-            cube(rimGapSize, center = true);
-        translate([-baseDiameter/2, 0, 0])
-            cube(rimGapSize, center = true);
+        cube([1.25*od, rimGapSize, rimGapSize], center = true);
     }
 }
 
