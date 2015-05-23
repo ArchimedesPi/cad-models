@@ -1,6 +1,6 @@
 $fn = 50;
 in = 25.4;
-baseDiameter = 2 * in;
+baseDiameter = 2.06 * in;
 baseHeight = 1.33 * in;
 wallThickness = 0.065 * in;
 rimHeight = 0.6 * in;
