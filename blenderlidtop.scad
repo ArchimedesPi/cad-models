@@ -36,9 +36,9 @@ module part() {
         translate([0, 0, rimHeight])
             rim(baseDiameter - 2*wallThickness, baseDiameter + rimProtrusion, rimThickness);
         translate([baseDiameter/2, 0, rimHeight+rimThickness+tabGap])
-            cube([tabProtrusion, tabWidth, tabHeight], center = true);
+            cube([tabProtrusion*2, tabWidth, tabHeight], center = true);
         translate([-baseDiameter/2, 0, rimHeight+rimThickness+tabGap])
-            cube([tabProtrusion, tabWidth, tabHeight], center = true);
+            cube([tabProtrusion*2, tabWidth, tabHeight], center = true);
     }
 }
 
