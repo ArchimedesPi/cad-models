@@ -7,10 +7,10 @@ rimHeight = 0.6 * in;
 rimProtrusion = 0.18 * in;
 rimThickness = 0.11 * in;
 rimGapSize = 0.33 * in;
-tabGap = 0.2 * in;
+tabGap = 0.21 * in;
 tabWidth = 0.25 * in;
 tabHeight = 0.15 * in;
-tabProtrusion = 0.1 * in;
+tabProtrusion = 0.11 * in;
 e = 0.01;
 
 module base(diameter, height, thickness) {
@@ -35,10 +35,10 @@ module part() {
         base(baseDiameter, baseHeight, wallThickness);
         translate([0, 0, rimHeight])
             rim(baseDiameter - 2*wallThickness, baseDiameter + rimProtrusion*2, rimThickness);
-        translate([baseDiameter/2, 0, rimHeight+rimThickness+tabGap])
-            cube([tabProtrusion*2, tabWidth, tabHeight], center = true);
-        translate([-baseDiameter/2, 0, rimHeight+rimThickness+tabGap])
-            cube([tabProtrusion*2, tabWidth, tabHeight], center = true);
+        translate([baseDiameter/2 - 0.5, -tabWidth/2, rimHeight+rimThickness+tabGap-(tabHeight/2)])
+            cube([tabProtrusion + 0.5, tabWidth, tabHeight]);
+        translate([-baseDiameter/2-tabProtrusion, -tabWidth/2, rimHeight+rimThickness+tabGap-(tabHeight/2)])
+            cube([tabProtrusion + 0.5, tabWidth, tabHeight]);
     }
 }
 
