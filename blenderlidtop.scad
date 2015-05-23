@@ -34,7 +34,7 @@ module part() {
     union() {
         base(baseDiameter, baseHeight, wallThickness);
         translate([0, 0, rimHeight])
-            rim(baseDiameter - 2*wallThickness, baseDiameter + rimProtrusion, rimThickness);
+            rim(baseDiameter - 2*wallThickness, baseDiameter + rimProtrusion*2, rimThickness);
         translate([baseDiameter/2, 0, rimHeight+rimThickness+tabGap])
             cube([tabProtrusion*2, tabWidth, tabHeight], center = true);
         translate([-baseDiameter/2, 0, rimHeight+rimThickness+tabGap])
