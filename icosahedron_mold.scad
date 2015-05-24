@@ -6,6 +6,7 @@ seperation = 5;
 screwSize = 4.6;
 screwLocationBump = 0.30;
 screwXBump = 0.25;
+pourDiameter = 10;
 
 module icosahedron() {
     scale([icosahedronScale, icosahedronScale, icosahedronScale])
@@ -19,7 +20,7 @@ module r_half() {
         translate([-moldSize, -moldSize*1.25/2, -moldSize*1.25/2])
             cube([moldSize, moldSize*1.25, moldSize*1.25]);
         translate([0, 0, moldSize/4])
-            cylinder(h=moldSize*1.25, d=5);
+            cylinder(h=moldSize*1.25, d=pourDiameter);
         translate([-moldSize*screwXBump, moldSize*screwLocationBump, moldSize*screwLocationBump])
             rotate(a=90, v=[0, 1, 0])
                 cylinder(h=moldSize, d=screwSize);
@@ -36,7 +37,7 @@ module l_half() {
         translate([0, -moldSize*1.25/2, -moldSize*1.25/2])
             cube([moldSize, moldSize*1.25, moldSize*1.25]);
         translate([0, 0, moldSize/4])
-            cylinder(h=moldSize*1.25, d=5);
+            cylinder(h=moldSize*1.25, d=pourDiameter);
         translate([-moldSize*screwXBump*3, moldSize*screwLocationBump, moldSize*screwLocationBump])
             rotate(a=90, v=[0, 1, 0])
                 cylinder(h=moldSize, d=screwSize);
