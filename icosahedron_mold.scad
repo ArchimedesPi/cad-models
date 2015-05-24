@@ -2,7 +2,7 @@ $fn = 20;
 e = 0.01;
 icosahedronScale = 15;
 moldSize = 40;
-seperation = 5;
+seperation = 10;
 screwSize = 4.6;
 screwLocationBump = 0.30;
 screwXBump = 0.25;
@@ -48,6 +48,6 @@ module l_half() {
 }
 
 translate([0, 0, moldSize/2]) {
-    translate([moldSize/2+seperation, 0, 0]) rotate([0, -90, 0]) l_half();
-    translate([-(moldSize/2+seperation), 0, 0]) rotate([0, 90, 0]) r_half();
+    translate([-seperation/2, 0, 0]) l_half();
+    translate([seperation/2, 0, 0]) r_half();
 }
