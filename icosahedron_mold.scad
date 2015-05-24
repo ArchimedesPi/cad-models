@@ -48,6 +48,6 @@ module l_half() {
 }
 
 translate([0, 0, moldSize/2]) {
-    translate([-seperation, 0, 0]) l_half();
-    translate([seperation, 0, 0]) r_half();
+    translate([moldSize/2+seperation, 0, 0]) rotate([0, -90, 0]) l_half();
+    translate([-(moldSize/2+seperation), 0, 0]) rotate([0, 90, 0]) r_half();
 }
