@@ -17,8 +17,8 @@ module r_half() {
     difference() {
         cube(moldSize, center = true);
         icosahedron();
-        translate([-moldSize, -moldSize*1.25/2, -moldSize*1.25/2])
-            cube([moldSize, moldSize*1.25, moldSize*1.25]);
+        translate([-(moldSize+e), -moldSize*1.25/2, -moldSize*1.25/2])
+            cube([moldSize+e, moldSize*1.25, moldSize*1.25]);
         translate([0, 0, moldSize/4])
             cylinder(h=moldSize*1.25, d=pourDiameter);
         translate([-moldSize*screwXBump, moldSize*screwLocationBump, moldSize*screwLocationBump])
@@ -35,7 +35,7 @@ module l_half() {
         cube(moldSize, center = true);
         icosahedron();
         translate([0, -moldSize*1.25/2, -moldSize*1.25/2])
-            cube([moldSize, moldSize*1.25, moldSize*1.25]);
+            cube([moldSize+e, moldSize*1.25, moldSize*1.25]);
         translate([0, 0, moldSize/4])
             cylinder(h=moldSize*1.25, d=pourDiameter);
         translate([-moldSize*screwXBump*3, moldSize*screwLocationBump, moldSize*screwLocationBump])
