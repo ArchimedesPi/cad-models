@@ -6,7 +6,7 @@ seperation = 5;
 screwSize = 4.6;
 screwLocationBump = 0.30;
 screwXBump = 0.25;
-pourDiameter = 10;
+pourDiameter = 15;
 
 module icosahedron() {
     scale([icosahedronScale, icosahedronScale, icosahedronScale])
