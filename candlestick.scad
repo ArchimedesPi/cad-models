@@ -1,7 +1,7 @@
 $fn = 20;
 e = 0.01;
 height = 20;
-candleDiameter = 22;
+candleDiameter = 22 + 1;
 diameter = candleDiameter + 10;
 
 difference() {
