@@ -1,6 +1,9 @@
 ### Solidworks Files ###
 ~$*
 
+### Slic3r output ###
+*.gcode
+
 #######################
 
 # Windows image file caches
