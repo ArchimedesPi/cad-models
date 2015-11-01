@@ -4,6 +4,10 @@
 ### Slic3r output ###
 *.gcode
 
+### EAGLE files ###
+*.b\#?
+*.s\#?
+
 #######################
 
 # Windows image file caches
