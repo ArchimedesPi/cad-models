@@ -2648,57 +2648,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-0.889" y="1.397" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.778" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="LED-1206-BOTTOM">
-<wire x1="-2" y1="0.4" x2="-2" y2="-0.4" width="0.127" layer="49"/>
-<wire x1="-2.4" y1="0" x2="-1.6" y2="0" width="0.127" layer="49"/>
-<wire x1="1.6" y1="0" x2="2.4" y2="0" width="0.127" layer="49"/>
-<wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="0" x2="-0.381" y2="0.635" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="0.635" x2="0.254" y2="0" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.635" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.635" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="1.27" y2="0" width="0.127" layer="49"/>
-<rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="51"/>
-<smd name="A" x="-1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
-<smd name="C" x="1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
-<hole x="0" y="0" drill="2.3"/>
-<polygon width="0" layer="51">
-<vertex x="1.1" y="-0.5"/>
-<vertex x="1.1" y="0.5"/>
-<vertex x="1.6" y="0.5"/>
-<vertex x="1.6" y="0.25" curve="90"/>
-<vertex x="1.4" y="0.05"/>
-<vertex x="1.4" y="-0.05" curve="90"/>
-<vertex x="1.6" y="-0.25"/>
-<vertex x="1.6" y="-0.5"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="-1.1" y="0.5"/>
-<vertex x="-1.1" y="-0.5"/>
-<vertex x="-1.6" y="-0.5"/>
-<vertex x="-1.6" y="-0.25" curve="90"/>
-<vertex x="-1.4" y="-0.05"/>
-<vertex x="-1.4" y="0.05" curve="90"/>
-<vertex x="-1.6" y="0.25"/>
-<vertex x="-1.6" y="0.5"/>
-</polygon>
-<wire x1="1.016" y1="1.016" x2="2.7686" y2="1.016" width="0.127" layer="21"/>
-<wire x1="2.7686" y1="1.016" x2="2.7686" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="2.7686" y1="-1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="3.175" y1="0" x2="3.3528" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.016" y1="-1.016" x2="-2.7686" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-2.7686" y1="-1.016" x2="-2.7686" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-2.7686" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
-<text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-3.175" y1="0" x2="-3.81" y2="0" width="0.254" layer="21"/>
-<wire x1="-3.48741875" y1="-0.368296875" x2="-3.48741875" y2="0.3556" width="0.254" layer="21"/>
-<wire x1="3.175" y1="0" x2="3.81" y2="0" width="0.254" layer="21"/>
-<wire x1="-3.489959375" y1="0.37591875" x2="-3.48741875" y2="0.373378125" width="0.254" layer="21"/>
-<wire x1="-3.48741875" y1="0.373378125" x2="-3.48741875" y2="-0.370840625" width="0.254" layer="21"/>
-</package>
 <package name="LUXEON-REBEL">
 <smd name="ANODE" x="-1.39" y="2.63" dx="1.91" dy="2.03" layer="1" roundness="50"/>
 <smd name="CATHODE" x="1.39" y="2.63" dx="1.91" dy="2.03" layer="1" roundness="50"/>
@@ -2734,66 +2683,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED-GREEN" prefix="D" uservalue="yes">
-<description>&lt;B&gt;Various green LEDs&lt;br&gt;&lt;br&gt;&lt;/B&gt;
-Green LEDs used in SFE Production&lt;br&gt;&lt;br&gt;
-0603- DIO-00821&lt;br&gt;
-LARGE- DIO-00862&lt;br&gt;
-LILYPAD- DIO-09910&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0603" package="LED-0603">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-00821" constant="no"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LILYPAD" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09910"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1206" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-00862" constant="no"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1206-BOTTOM" package="LED-1206-BOTTOM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-11076" constant="no"/>
-<attribute name="VALUE" value="Green" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED-BLUE" prefix="D" uservalue="yes">
 <description>&lt;H3&gt;Blue LEDs for production use&lt;/H3&gt;&lt;p&gt;
 Various blue LEDs stocked by SparkFun production&lt;br&gt;
@@ -2879,12 +2768,12 @@ Rebel - DIO-09553&lt;br&gt;
 <part name="C3" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="22pF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="22pF"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="220OHM-1/10W-1%(0603)" device="" value="220"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="220OHM-1/10W-1%(0603)" device="" value="220"/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2922,12 +2811,12 @@ Rebel - DIO-09553&lt;br&gt;
 <instance part="C3" gate="G$1" x="71.12" y="35.56" rot="R90"/>
 <instance part="C4" gate="G$1" x="71.12" y="30.48" rot="R90"/>
 <instance part="GND7" gate="1" x="58.42" y="33.02" rot="R270"/>
-<instance part="D1" gate="G$1" x="17.78" y="48.26"/>
-<instance part="D2" gate="G$1" x="27.94" y="48.26"/>
+<instance part="D2" gate="G$1" x="22.86" y="48.26"/>
 <instance part="GND8" gate="1" x="22.86" y="25.4"/>
-<instance part="SUPPLY6" gate="G$1" x="27.94" y="53.34"/>
-<instance part="R5" gate="G$1" x="17.78" y="38.1" rot="R90"/>
-<instance part="R6" gate="G$1" x="27.94" y="38.1" rot="R90"/>
+<instance part="SUPPLY6" gate="G$1" x="22.86" y="53.34"/>
+<instance part="R6" gate="G$1" x="22.86" y="35.56" rot="R90"/>
+<instance part="SUPPLY7" gate="G$1" x="83.82" y="60.96"/>
+<instance part="SUPPLY8" gate="G$1" x="55.88" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -2998,15 +2887,9 @@ Rebel - DIO-09553&lt;br&gt;
 <wire x1="63.5" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="33.02" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="30.48" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="30.48" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="22.86" y1="27.94" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<junction x="22.86" y="30.48"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3021,24 +2904,6 @@ Rebel - DIO-09553&lt;br&gt;
 <pinref part="JP1" gate="G$1" pin="D+"/>
 <wire x1="45.72" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="UVCC" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="VBUS"/>
-<wire x1="45.72" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
-<label x="53.34" y="17.78" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="UVCC"/>
-<wire x1="86.36" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="55.88" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VBUS"/>
-<wire x1="83.82" y1="58.42" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
-<junction x="83.82" y="58.42"/>
-<wire x1="83.82" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="78.74" y="60.96" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -3120,7 +2985,23 @@ Rebel - DIO-09553&lt;br&gt;
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
-<wire x1="27.94" y1="50.8" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="50.8" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="VBUS"/>
+<wire x1="45.72" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="17.78" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="UVCC"/>
+<wire x1="86.36" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="55.88" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VBUS"/>
+<wire x1="83.82" y1="58.42" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<junction x="83.82" y="58.42"/>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="DAT" class="0">
@@ -3214,23 +3095,12 @@ Rebel - DIO-09553&lt;br&gt;
 <wire x1="121.92" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
 <label x="129.54" y="25.4" size="1.27" layer="95"/>
 </segment>
-<segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="17.78" y1="50.8" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
-<label x="20.32" y="53.34" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="40.64" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
